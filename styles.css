@@ -1,4 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background: #daeaff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.page-top {
+    background: linear-gradient(180deg, rgba(8,12,48,1) 2%, rgba(218,234,255,1) 66%);
+}
+
+h1 {
+    font-family:'Luckiest Guy', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:red;
+    padding:10px 25px 0 25px;
+    display: inline-block;
+    background-color:#DDEBF4;
+    transform: rotate(-3deg);
+    text-shadow: 2px 2px 3px white;
+    box-shadow: 0 0 5px black;
+}
+
+h2 {
+    font-family:'Luckiest Guy', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:red;
+    text-shadow: 2px 2px 3px white;
+    transform: rotate(-2deg);
+}
 
 #animcanvas {
     width:100%;

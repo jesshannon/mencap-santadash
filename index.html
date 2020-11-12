@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Santa Dash for Mencap</title>
     <meta name="description" content="" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/vvb8qmd.css">
 
@@ -14,22 +15,77 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/4003eaed24.js" crossorigin="anonymous"></script>
-    <script src="anim.js?tgfht"></script>
+    <script src="anim.js"></script>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-
 </head>
 
 <body>
 
-    <div class="container main">
+    <div class="page-top">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-8 text-center pt-5">
+                    <h1>Around The World Santa Dash</h1>
+                </div>
+                <div class="col-md-4 pt-4 text-left">
+                    <img src="images/logo.svg" width="150" class="" />
+                </div>
+            </div>
+            <canvas id="animcanvas" width="1920" height="1080"></canvas>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-2 text-center pt-3">
+                <h2>Sponsor a Team!</h2>
+                <p>Our teams are racing each other to log as many hours of activity as they can each day. Choose a team
+                    below to sponsor or <a href="http://virginmoneygiving.com/fund/virtualsantadash">donate to Mencap Liverpool here</a>.</p>
+            </div>
+        </div>
 
-        <canvas id="animcanvas" width="1920" height="1080"></canvas>
+        <div class="row pt-5">
+            <div class="col-lg-6">
+                <h1>Leaderboard</h1>
+                <div class="float-right">
+                    Choose a team or <a href="http://virginmoneygiving.com/fund/virtualsantadash" class="btn btn-danger">Donate Here</a>
+                </div>
+                <table class="table leaderboard">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Team</th>
+                            <th scope="col">Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6">
+                <a class="twitter-timeline" data-width="" data-height="900" data-theme="light"
+                    href="https://twitter.com/mencapliverpool?ref_src=twsrc%5Etfw">Tweets by mencapliverpool</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
 
     </div>
+
+    <footer class="text-muted">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    Mencap Liverpool, Registered Charity Number 1004262<br />
+                    Designed by <a href="http://www.sophie-green.com">Sophie Green</a>, built by <a
+                        href="http://ts0.com">Jess Shannon</a>. Code on <a href="https://github.com/jesshannon/mencap-santadash">GitHub</a>.
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
