@@ -38,7 +38,7 @@ $(function () {
 
     var camera = 0;
     var size = { width: 1920, height: 1080 }
-    var rowSpace = Math.min(120, size.height / (teams.length + 1));
+    var rowSpace = 120; //Math.min(120, size.height / (teams.length + 1));
 
     var animCounter = 0;
     var day = 0;
@@ -158,7 +158,7 @@ $(function () {
 						  <td>${link}</td>
 						  <td>${leader.Total}</td>
                         </tr>`);
-            
+
             teams.push({
                 name: leader.Name,
                 progress: [leader.Total / 5, leader.Total / 5, leader.Total / 5, leader.Total / 5, leader.Total / 5],
@@ -172,6 +172,8 @@ $(function () {
             var textB = b.name.toUpperCase();
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
+
+        rowSpace = Math.min(120, size.height / (teams.length + 1));
 
         setTimeout(function () {
 
