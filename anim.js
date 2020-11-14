@@ -156,12 +156,12 @@ $(function () {
             $('.leaderboard tbody').append(`<tr>
 						  <th scope="row">${ind + 1}</th>
 						  <td>${link}</td>
-						  <td>${leader.Total}</td>
+						  <td>${Math.round(leader.Total*100)/100}</td>
                         </tr>`);
 
             teams.push({
                 name: leader.Name,
-                progress: [leader.Total / 5, leader.Total / 5, leader.Total / 5, leader.Total / 5, leader.Total / 5],
+                progress: leader.Progress,
                 position: 0
             });
         });
@@ -207,7 +207,7 @@ $(function () {
 
         }, 1000);
     }
-    $('head').append($('<script src="https://gsheetcounter.azurewebsites.net/api/GetProgress?callback=window.callback"></script>'));
+    $('head').append($('<script src="https://gsheetcounter.azurewebsites.net/api/GetProgress?sheet=santadash&callback=window.callback"></script>'));
 
 
     function drawSnowLayer(image, progress, verticalOffset, initialOffset) {
