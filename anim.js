@@ -198,7 +198,7 @@ $(function () {
                 }
 
                 // check all teams have completed run for today
-                if (dayFinished == teams.length) {
+                if (dayFinished == teams.length && day < team.progress.length-1) {
                     day++;
                 }
                 animCounter++;
