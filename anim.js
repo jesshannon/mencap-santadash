@@ -84,7 +84,7 @@ $(function () {
                 drawSnowLayer(snowImages[t % snowImages.length], camera, rowY, t * 200);
 
                 // draw player character
-                ctx.drawImage(reindeerImages[Math.round(team.position / 30) % reindeerImages.length], playerX, rowY - 100, 300, 300);
+                ctx.drawImage(reindeerImages[Math.round(team.position / 15) % reindeerImages.length], playerX, rowY - 100, 300, 300);
                 ctx.drawImage(elfImages[t % elfImages.length], playerX, rowY - 100, 300, 300);
 
             }
@@ -191,7 +191,7 @@ $(function () {
                     // count down progress for each day before moving on to next one
                     if (team.progress[day] > 0) {
                         team.progress[day] -= 0.3;
-                        team.position += 10;
+                        team.position += 5;
                     } else {
                         dayFinished++;
                     }
